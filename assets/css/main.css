@@ -3470,9 +3470,6 @@ input, select, textarea {
 				background-color: #1a9ae4;
 				color: #ffffff !important;
 				box-shadow: none;
-				width: 250px;
-				font-size: 14pt;
-				height:2.75em
 			}
 
 				#main input[type="submit"].primary:hover,
@@ -3843,3 +3840,17 @@ input, select, textarea {
 			}
 
 		} */
+		
+		.success_text.show {
+			display: block;
+		}
+		.success_text {
+			text-align: center;
+			display: none;
+			animation: fadeIn 1s;
+		}
+
+		@keyframes fadeIn {
+			0% { opacity: 0; }
+			100% { opacity: 1; }
+		  }
