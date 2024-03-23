@@ -2631,7 +2631,15 @@ input, select, textarea {
 		text-align: center;
 	}
 	
-	section.special ol, ul{
+	section.major ol{
+		text-align: left;
+	}
+
+	section.major ul{
+		text-align: left;
+	}
+
+	section ul{
 		text-align: left;
 	}
 
