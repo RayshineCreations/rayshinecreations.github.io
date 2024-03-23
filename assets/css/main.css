@@ -2630,6 +2630,10 @@ input, select, textarea {
 	section.special, article.special {
 		text-align: center;
 	}
+	
+	section.special ol, ul{
+		text-align: left;
+	}
 
 	header.major {
 		margin-bottom: 3em;
