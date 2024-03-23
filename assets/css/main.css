@@ -3093,7 +3093,7 @@ input, select, textarea {
 		}
 
 		#header.alt {
-			padding: 7em 5em 4em 5em ;
+			padding: 3em 5em 1em 5em ;
 		}
 
 			#header.alt h1 {
@@ -3104,7 +3104,7 @@ input, select, textarea {
 				-moz-transition: opacity 3s ease;
 				-webkit-transition: opacity 3s ease;
 				-ms-transition: opacity 3s ease;
-				transition: opacity 3s ease;
+				transition: opacity 1s ease;
 				-moz-transition-delay: 0.5s;
 				-webkit-transition-delay: 0.5s;
 				-ms-transition-delay: 0.5s;
@@ -3116,7 +3116,7 @@ input, select, textarea {
 				-moz-transition: opacity 1.25s ease, -moz-transform 0.5s ease;
 				-webkit-transition: opacity 1.25s ease, -webkit-transform 0.5s ease;
 				-ms-transition: opacity 1.25s ease, -ms-transform 0.5s ease;
-				transition: opacity 1.25s ease, transform 0.5s ease;
+				transition: opacity 1s ease;
 				-moz-transition-delay: 0s;
 				-webkit-transition-delay: 0s;
 				-ms-transition-delay: 0s;
@@ -3225,7 +3225,7 @@ input, select, textarea {
 		background-color: #ffffff;
 		color: #636363;
 		position: absolute;
-		width: 64em;
+		width: 70em;
 		max-width: calc(100% - 4em);
 		padding: 1em;
 		background-color: #f7f7f7;
@@ -3831,10 +3831,18 @@ input, select, textarea {
 /* Wrapper */
 
 	#wrapper {
-		width: 64em;
+		width: 70em;
 		max-width: calc(100% - 4em);
 		margin: 0 auto;
 	}
+
+		@media screen and (max-width: 480px) {
+
+			#wrapper {
+				max-width: calc(100% - 10em);
+			}
+
+		}
 
 		@media screen and (max-width: 480px) {
 
@@ -3843,15 +3851,6 @@ input, select, textarea {
 			}
 
 		}
-
-		/* @media screen and (max-width: 360px) {
-
-			#wrapper {
-				max-width: calc(100% - 1em);
-				position: static;
-			}
-
-		} */
 		
 		.success_text.show {
 			display: block;
